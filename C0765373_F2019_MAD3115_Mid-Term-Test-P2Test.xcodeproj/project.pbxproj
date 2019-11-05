@@ -16,6 +16,7 @@
 		1AD47A08237540AD00D50D84 /* customers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AD47A07237540AD00D50D84 /* customers.plist */; };
 		1AD47A0A237540AD00D50D84 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD47A09237540AD00D50D84 /* LoginViewController.swift */; };
 		1AD47A0C237540AD00D50D84 /* BillListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD47A0B237540AD00D50D84 /* BillListTableViewController.swift */; };
+		1AD47A0E237540AD00D50D84 /* allBills.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AD47A0D237540AD00D50D84 /* allBills.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1AD47A07237540AD00D50D84 /* customers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = customers.plist; sourceTree = "<group>"; };
 		1AD47A09237540AD00D50D84 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1AD47A0B237540AD00D50D84 /* BillListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListTableViewController.swift; sourceTree = "<group>"; };
+		1AD47A0D237540AD00D50D84 /* allBills.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = allBills.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				1AD47A07237540AD00D50D84 /* customers.plist */,
 				1AD47A09237540AD00D50D84 /* LoginViewController.swift */,
 				1AD47A0B237540AD00D50D84 /* BillListTableViewController.swift */,
+				1AD47A0D237540AD00D50D84 /* allBills.plist */,
 			);
 			path = "C0765373_F2019_MAD3115_Mid-Term-Test-P2Test";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 				1AD479FD237540AD00D50D84 /* Assets.xcassets in Resources */,
 				1AD47A08237540AD00D50D84 /* customers.plist in Resources */,
 				1AD479FB237540AD00D50D84 /* Main.storyboard in Resources */,
+				1AD47A0E237540AD00D50D84 /* allBills.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
