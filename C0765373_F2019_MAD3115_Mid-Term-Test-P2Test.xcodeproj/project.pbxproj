@@ -18,6 +18,7 @@
 		1AD47A0C237540AD00D50D84 /* BillListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD47A0B237540AD00D50D84 /* BillListTableViewController.swift */; };
 		1AD47A0E237540AD00D50D84 /* allBills.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AD47A0D237540AD00D50D84 /* allBills.plist */; };
 		1AD47A10237540AD00D50D84 /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD47A0F237540AD00D50D84 /* ShowBillDetailsViewController.swift */; };
+		1AD47A12237540AD00D50D84 /* AddNewBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD47A11237540AD00D50D84 /* AddNewBillViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1AD47A0B237540AD00D50D84 /* BillListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListTableViewController.swift; sourceTree = "<group>"; };
 		1AD47A0D237540AD00D50D84 /* allBills.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = allBills.plist; sourceTree = "<group>"; };
 		1AD47A0F237540AD00D50D84 /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
+		1AD47A11237540AD00D50D84 /* AddNewBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBillViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				1AD47A0B237540AD00D50D84 /* BillListTableViewController.swift */,
 				1AD47A0D237540AD00D50D84 /* allBills.plist */,
 				1AD47A0F237540AD00D50D84 /* ShowBillDetailsViewController.swift */,
+				1AD47A11237540AD00D50D84 /* AddNewBillViewController.swift */,
 			);
 			path = "C0765373_F2019_MAD3115_Mid-Term-Test-P2Test";
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				1AD47A10237540AD00D50D84 /* ShowBillDetailsViewController.swift in Sources */,
 				1AD479F4237540AD00D50D84 /* AppDelegate.swift in Sources */,
 				1AD479F6237540AD00D50D84 /* SceneDelegate.swift in Sources */,
+				1AD47A12237540AD00D50D84 /* AddNewBillViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
