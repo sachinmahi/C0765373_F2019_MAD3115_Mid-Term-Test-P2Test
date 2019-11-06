@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VHM-P5-5SC">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VHM-P5-5SC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,59 +10,42 @@
         <!--Log In-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="C0753362_MAD3115_S2019_MidTerm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="C0765373_F2019_MAD3115_Mid_Term_Test_P2Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileicon" translatesAutoresizingMaskIntoConstraints="NO" id="noh-3m-1PZ">
-                                <rect key="frame" x="147" y="119" width="120" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="VoO-c7-3nk"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="euo-Sy-yEP"/>
-                                    <constraint firstAttribute="width" constant="120" id="rCw-kd-SgX"/>
-                                </constraints>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2H3-4r-Mjs">
-                                <rect key="frame" x="20" y="275" width="374" height="30"/>
-                                <nil key="textColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="uAn-gt-rx0">
+                                <rect key="frame" x="20" y="387" width="374" height="20.5"/>
+                            </stackView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dia-77-mZG">
+                                <rect key="frame" x="48" y="531" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JGB-c2-gON">
+                                <rect key="frame" x="48" y="319" width="273" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oxB-0g-E9W">
-                                <rect key="frame" x="20" y="329" width="374" height="30"/>
-                                <nil key="textColor"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IEq-36-5xY">
+                                <rect key="frame" x="48" y="431" width="273" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="uAn-gt-rx0">
-                                <rect key="frame" x="20" y="379" width="374" height="31"/>
-                                <subviews>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dia-77-mZG">
-                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
-                                    </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember me?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnp-fX-Iz4">
-                                        <rect key="frame" x="78" y="0.0" width="296" height="31"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember me?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnp-fX-Iz4">
+                                <rect key="frame" x="131" y="536" width="374" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uAn-gt-rx0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0jG-bK-IOK"/>
-                            <constraint firstItem="oxB-0g-E9W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="21b-k7-4Ca"/>
-                            <constraint firstItem="noh-3m-1PZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4fh-Vh-fHh"/>
-                            <constraint firstItem="uAn-gt-rx0" firstAttribute="top" secondItem="oxB-0g-E9W" secondAttribute="bottom" constant="20" id="5Uq-Xi-5Wg"/>
-                            <constraint firstItem="noh-3m-1PZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="D6w-GH-ci0"/>
-                            <constraint firstItem="2H3-4r-Mjs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R9v-Go-cpr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uAn-gt-rx0" secondAttribute="trailing" constant="20" id="SuA-6N-AUY"/>
-                            <constraint firstItem="oxB-0g-E9W" firstAttribute="top" secondItem="2H3-4r-Mjs" secondAttribute="bottom" constant="24" id="Tc9-Xu-jUd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2H3-4r-Mjs" secondAttribute="trailing" constant="20" id="buf-DO-a0v"/>
-                            <constraint firstItem="2H3-4r-Mjs" firstAttribute="top" secondItem="noh-3m-1PZ" secondAttribute="bottom" constant="36" id="oaV-EA-xOa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oxB-0g-E9W" secondAttribute="trailing" constant="20" id="uIK-Hk-Yg0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -77,9 +57,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="email_txt" destination="2H3-4r-Mjs" id="iXt-1l-rqC"/>
+                        <outlet property="email_txt" destination="JGB-c2-gON" id="87n-6v-Gb5"/>
                         <outlet property="loginBT" destination="jZw-Xf-Y3F" id="XUU-GM-Rdb"/>
-                        <outlet property="password_txt" destination="oxB-0g-E9W" id="3K0-4x-7JB"/>
+                        <outlet property="password_txt" destination="IEq-36-5xY" id="vKj-7z-kmb"/>
                         <outlet property="remember_Switch" destination="Dia-77-mZG" id="E9a-l7-M7o"/>
                     </connections>
                 </viewController>
@@ -90,7 +70,7 @@
         <!--Bill List Table View Controller-->
         <scene sceneID="xTx-9p-LTm">
             <objects>
-                <viewController storyboardIdentifier="homeVC" id="x8l-s8-QuF" customClass="BillListTableViewController" customModule="C0753362_MAD3115_S2019_MidTerm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeVC" id="x8l-s8-QuF" customClass="BillListTableViewController" customModule="C0765373_F2019_MAD3115_Mid_Term_Test_P2Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KIy-hC-La8" customClass="hom">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,7 +80,8 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Home" id="Fp4-OF-uBt">
-                                        <barButtonItem key="rightBarButtonItem" title="Logout" id="aFU-hh-WzQ"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="aFU-hh-WzQ"/>
+                                        <barButtonItem key="rightBarButtonItem" title="add" image="plus.app" catalog="system" id="rx5-LK-jTF"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -113,11 +94,11 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3PB-MU-Hbl" id="379-WA-oyu">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pR8-52-NVH">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -144,7 +125,7 @@
         <!--Show Bill Details View Controller-->
         <scene sceneID="O4q-f4-kBF">
             <objects>
-                <viewController storyboardIdentifier="showBillVC" id="wp7-PO-JDa" customClass="ShowBillDetailsViewController" customModule="C0753362_MAD3115_S2019_MidTerm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="showBillVC" id="wp7-PO-JDa" customClass="ShowBillDetailsViewController" customModule="C0765373_F2019_MAD3115_Mid_Term_Test_P2Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4jU-Z0-qLP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -190,11 +171,11 @@
                                         <rect key="frame" x="0.0" y="28" width="379" height="117"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8jT-D8-4QH" id="o07-GF-bAX">
-                                            <rect key="frame" x="0.0" y="0.0" width="379" height="116.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="379" height="117"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7ZK-no-tLS">
-                                                    <rect key="frame" x="20" y="0.0" width="339" height="116.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="339" height="117"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -209,6 +190,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LTc-kz-Xj9"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="w15-Ce-2Gd"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="nJ0-Yz-h5e"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="allBills_table" destination="UpY-Hu-5aE" id="hi8-Ik-sXe"/>
                         <outlet property="customeName_txt" destination="6M4-8d-wb9" id="tYT-Cc-W6j"/>
@@ -224,29 +210,26 @@
         <!--Add New Bill View Controller-->
         <scene sceneID="cZe-Iv-c6H">
             <objects>
-                <viewController storyboardIdentifier="addBillVC" id="hKj-2P-cHC" customClass="AddNewBillViewController" customModule="C0753362_MAD3115_S2019_MidTerm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addBillVC" id="hKj-2P-cHC" customClass="AddNewBillViewController" customModule="C0765373_F2019_MAD3115_Mid_Term_Test_P2Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XLJ-WW-Cz5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="8ui-MY-KtT">
-                                <rect key="frame" x="20" y="118" width="374" height="138"/>
+                                <rect key="frame" x="20" y="118" width="374" height="150"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bill amount" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ox-oc-mwx">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BillType" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zgb-7O-s9Q">
-                                        <rect key="frame" x="0.0" y="54" width="374" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="58" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BillDate" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ees-vW-a63">
-                                        <rect key="frame" x="0.0" y="108" width="374" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="116" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -285,6 +268,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="profileicon" width="80" height="80"/>
+        <image name="plus.app" catalog="system" width="64" height="56"/>
     </resources>
 </document>
