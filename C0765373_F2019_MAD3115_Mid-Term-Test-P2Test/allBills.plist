@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   allBills.plist
-   C0765373_F2019_MAD3115_Mid-Term-Test-P2Test
-
-   Created by simar mahi on 05/11/19.
-   Copyright (c) 2019 MacStudent. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<dict>
+	<key>bills</key>
+	<array>
+		<dict>
+			<key>customerID</key>
+			<integer>0</integer>
+			<key>billID</key>
+			<integer>0</integer>
+			<key>billType</key>
+			<string></string>
+			<key>billAmount</key>
+			<integer>0</integer>
+			<key>manufacturerName</key>
+			<string></string>
+			<key>mobilePlan</key>
+			<integer>0</integer>
+			<key>internetUsed</key>
+			<string></string>
+		</dict>
+		<dict/>
+	</array>
+</dict>
 </plist>
