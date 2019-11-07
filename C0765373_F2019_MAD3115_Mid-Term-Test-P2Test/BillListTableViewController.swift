@@ -118,15 +118,37 @@ class BillListTableViewController: UIViewController , UITableViewDelegate , UITa
     }
     func addData(){
  
-        let b1: Mobile = Mobile(Id: 1, billDate: Date(), billType: billTypes.Mobile, totalBillAmount: 74.52, mobileManufacturer: "Samsung S10", planName: "Talk + Data", mobileNumber: "+12345678901", internetUsed: 23, minuteUsed: 34)
+        let b1: Mobile = Mobile(Id: 1, billDate: Date(), billType: billTypes.Mobile, totalBillAmount: 84.82, mobileManufacturer: "Apple iPhone 8", planName: "Talk + Data", mobileNumber: "+16477848654", internetUsed: 55, minuteUsed: 54)
+        let b2: Mobile = Mobile(Id: 2, billDate: Date(), billType: billTypes.Mobile, totalBillAmount: 56.90, mobileManufacturer: "Samsung", planName: "LTE+3G 8GB Promo plan", mobileNumber: "+1986764285", internetUsed: 65, minuteUsed: 766)
         
+        let b3: Internet = Internet(Id: 1, billDate: Date(), billType: billTypes.Internet, totalBillAmount: 25.89, providerName: "Bell", internetUsed: 44)
+        
+        let b4: Internet = Internet(Id: 2, billDate: Date(), billType: billTypes.Internet, totalBillAmount: 255.89, providerName: "Rogers", internetUsed: 707)
+        
+        let b5: Hydro = Hydro(Id: 1, billDate: Date(), billType: billTypes.Hydro, totalBillAmount: 895.50, agencyName: "Sun Energy", unitconsumed: 66)
+        
+        let b6: Hydro = Hydro(Id: 2, billDate: Date(), billType: billTypes.Hydro, totalBillAmount: 476.8, agencyName: "Energizer", unitconsumed: 98)
         
         //Creating Customer Objects
         
         let cust1: Customer = Customer(customerId: 1, firstName: "sachin", lastName: "mahi", email: "sachin@gmail.com",arrayOfBills: [b1,b2])
          print(cust1.arrayBill.count)
+
+        let cust2: Customer = Customer(customerId: 2, firstName: "simranjit", lastName: "singh", email: "simranjit@gmail.com",arrayOfBills: [b2,b3])
+        
+
+        let cust3: Customer = Customer(customerId: 3, firstName: "harmanpreet", lastName: "singh", email: "harmanpreet@gmail.com",arrayOfBills: [b4,b3])
         
         
-        customerArray = [cust1]
+        
+        let cust4: Customer = Customer(customerId: 4, firstName: "varinder", lastName: "Dhillon", email: "varinder@gmail.com",arrayOfBills: [b4,b5])
+    
+        
+        
+        let cust5: Customer = Customer(customerId: 5, firstName: "charanpreet", lastName: "kaur", email: "charan@gmail.com",arrayOfBills: [b1,b3])
+        
+        
+        customerArray = [cust1, cust2, cust3, cust4, cust5]
+        
     }
 }
