@@ -17,6 +17,7 @@
 		1AD47A10237540AD00D50D84 /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD47A0F237540AD00D50D84 /* ShowBillDetailsViewController.swift */; };
 		1AD47A12237540AD00D50D84 /* AddNewBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD47A11237540AD00D50D84 /* AddNewBillViewController.swift */; };
 		1AD47A4C237540AD00D50D84 /* allBills.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AD47A4B237540AD00D50D84 /* allBills.plist */; };
+		1AD47A502376383400D50D84 /* profileicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD47A4F2376383300D50D84 /* profileicon.png */; };
 		33E1E44123760BCA007F5361 /* CustomerStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E1E43B23760BC9007F5361 /* CustomerStruct.swift */; };
 		33E1E44223760BCA007F5361 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E1E43C23760BC9007F5361 /* Utility.swift */; };
 		33E1E44823760C73007F5361 /* customers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33E1E44723760C73007F5361 /* customers.plist */; };
@@ -46,6 +47,7 @@
 		1AD47A0F237540AD00D50D84 /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
 		1AD47A11237540AD00D50D84 /* AddNewBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBillViewController.swift; sourceTree = "<group>"; };
 		1AD47A4B237540AD00D50D84 /* allBills.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = allBills.plist; sourceTree = "<group>"; };
+		1AD47A4F2376383300D50D84 /* profileicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileicon.png; sourceTree = "<group>"; };
 		33E1E43B23760BC9007F5361 /* CustomerStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerStruct.swift; sourceTree = "<group>"; };
 		33E1E43C23760BC9007F5361 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		33E1E44723760C73007F5361 /* customers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = customers.plist; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				1AD479F3237540AD00D50D84 /* AppDelegate.swift */,
 				33E1E46223761075007F5361 /* SceneDelegate.swift */,
 				1AD479F7237540AD00D50D84 /* ViewController.swift */,
+				1AD47A4F2376383300D50D84 /* profileicon.png */,
 				1AD479F9237540AD00D50D84 /* Main.storyboard */,
 				1AD479FC237540AD00D50D84 /* Assets.xcassets */,
 				1AD479FE237540AD00D50D84 /* LaunchScreen.storyboard */,
@@ -209,6 +212,7 @@
 				1AD479FB237540AD00D50D84 /* Main.storyboard in Resources */,
 				33E1E45F23760FB6007F5361 /* LC-full.jpg in Resources */,
 				1AD47A4C237540AD00D50D84 /* allBills.plist in Resources */,
+				1AD47A502376383400D50D84 /* profileicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
