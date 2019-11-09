@@ -58,13 +58,12 @@
                         <barButtonItem key="rightBarButtonItem" title="Login" id="jZw-Xf-Y3F">
                             <connections>
                                 <action selector="login_BTN:" destination="BYZ-38-t0r" id="xc9-nw-jmb"/>
-                                <segue destination="x8l-s8-QuF" kind="show" id="rcN-SV-fq6"/>
+                                <segue destination="x8l-s8-QuF" kind="show" id="Gyg-c0-2Sz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="email_txt" destination="JGB-c2-gON" id="87n-6v-Gb5"/>
-                        <outlet property="loginBT" destination="jZw-Xf-Y3F" id="XUU-GM-Rdb"/>
                         <outlet property="password_txt" destination="IEq-36-5xY" id="vKj-7z-kmb"/>
                         <outlet property="remember_Switch" destination="Dia-77-mZG" id="E9a-l7-M7o"/>
                     </connections>
@@ -86,7 +85,6 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Home" id="Fp4-OF-uBt">
-                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="aFU-hh-WzQ"/>
                                         <barButtonItem key="rightBarButtonItem" title="add" image="plus.app" catalog="system" id="rx5-LK-jTF"/>
                                     </navigationItem>
                                 </items>
@@ -193,6 +191,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ly4-d2-uoo">
+                                <rect key="frame" x="-3" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="ShowBillDetails" id="O5r-39-307"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LTc-kz-Xj9"/>
@@ -222,38 +227,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="8ui-MY-KtT">
-                                <rect key="frame" x="20" y="118" width="374" height="150"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bill amount" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ox-oc-mwx">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BillType" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zgb-7O-s9Q">
-                                        <rect key="frame" x="0.0" y="58" width="374" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BillDate" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ees-vW-a63">
-                                        <rect key="frame" x="0.0" y="116" width="374" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bill Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AOB-gX-vdK">
+                                <rect key="frame" x="56" y="173" width="302" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bill Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O21-Kj-WWY">
+                                <rect key="frame" x="56" y="259" width="302" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bill Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arK-u3-EDq">
+                                <rect key="frame" x="56" y="356" width="302" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="sI3-FK-27A" firstAttribute="trailing" secondItem="8ui-MY-KtT" secondAttribute="trailing" constant="20" id="Q0D-V0-REm"/>
-                            <constraint firstItem="8ui-MY-KtT" firstAttribute="leading" secondItem="sI3-FK-27A" secondAttribute="leading" constant="20" id="hhU-5C-p0h"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sI3-FK-27A"/>
                     </view>
+                    <navigationItem key="navigationItem" id="u6s-jn-KW2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mX-nt-aJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2524" y="637"/>
+            <point key="canvasLocation" x="2523.1884057971015" y="636.83035714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oOU-lO-0Bo">
