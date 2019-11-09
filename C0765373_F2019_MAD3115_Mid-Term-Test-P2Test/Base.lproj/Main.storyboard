@@ -246,6 +246,9 @@
                                 <state key="normal" title="Internet">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="MIx-Ks-C1E" kind="show" id="mcP-FG-PuR"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uc0-OV-tng">
                                 <rect key="frame" x="56" y="263" width="110" height="29"/>
@@ -261,6 +264,9 @@
                                 <state key="normal" title="Hydro">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="z0e-K7-ax1" kind="show" id="Ncb-Vp-ecX"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add New Bill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J86-gU-psW">
                                 <rect key="frame" x="56" y="87" width="302" height="21"/>
@@ -276,6 +282,9 @@
                                 <state key="normal" title="Mobile">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="zLo-bL-hxl" kind="show" id="iVg-T8-DVh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -292,7 +301,7 @@
             <objects>
                 <viewController id="z0e-K7-ax1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WYQ-vq-fXq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Agency Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHc-TV-kzn">
@@ -326,17 +335,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="lwV-Th-mYG"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3eV-5g-I4H"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8S-mr-nQ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3178.2608695652175" y="631.47321428571422"/>
+            <point key="canvasLocation" x="3261" y="-529"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cO8-JW-dbS">
             <objects>
                 <viewController id="zLo-bL-hxl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="brx-07-zig">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Mobile Bill Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZj-G0-XI5">
@@ -382,17 +392,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="DgP-tD-rUx"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7de-66-5Ed"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ocM-ge-p5W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3873.913043478261" y="636.83035714285711"/>
+            <point key="canvasLocation" x="3322" y="536"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="56J-Zl-ECb">
             <objects>
                 <viewController id="MIx-Ks-C1E" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SRV-vN-ft0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Internet Bill Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpf-Of-L6Z">
@@ -426,10 +437,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="MzV-0r-G8j"/>
                     </view>
+                    <navigationItem key="navigationItem" id="80r-2i-T4X"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNn-Xp-MO4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4618.840579710145" y="632.8125"/>
+            <point key="canvasLocation" x="3377" y="1270"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oOU-lO-0Bo">
